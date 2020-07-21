@@ -1,0 +1,20 @@
+# dependencies
+node_modules
+
+# production
+build
+
+# env
+.env
+.env.development
+.env.production
+
+npm-debug.log*
+
+# ide config dir
+.idea
+
+# static folder
+uploads/*
+# exception to the rule
+!uploads/.gitkeep

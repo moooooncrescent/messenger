@@ -1,0 +1,11 @@
+mutation Register($input: UserInput) {
+  user(input: $input) {
+    id
+    login
+    password
+    email
+    isDeleted
+    createdAt
+    updatedAt
+  }
+}

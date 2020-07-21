@@ -1,0 +1,30 @@
+# This file was generated based on ".graphqlconfig". Do not edit manually.
+
+schema {
+    query: Query
+    mutation: Mutation
+}
+
+type File {
+    createdAt: Date
+    encoding: String
+    filename: String
+    id: ID
+    isDeleted: Boolean
+    mimetype: String
+    updatedAt: Date
+}
+
+type Mutation {
+    file(file: Upload!): File
+}
+
+type Query {
+    files: [File]
+}
+
+
+scalar Date
+
+"The `Upload` scalar type represents a file upload."
+scalar Upload

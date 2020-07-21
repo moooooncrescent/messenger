@@ -1,0 +1,11 @@
+query FileList {
+  files {
+    id
+    filename
+    mimetype
+    encoding
+    isDeleted
+    createdAt
+    updatedAt
+  }
+}
